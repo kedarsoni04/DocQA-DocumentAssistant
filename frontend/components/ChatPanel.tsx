@@ -232,7 +232,7 @@ const ChatPanel = forwardRef<ChatPanelHandle, ChatPanelProps>(
         {/* Input bar */}
         <div className="px-5 py-4 border-t border-slate-100 flex-shrink-0">
           <div
-            className={`flex items-end gap-2 rounded-2xl border transition-all ${
+            className={`flex items-end gap-2 p-2 rounded-2xl border transition-all ${
               isDisabled
                 ? "border-slate-200 bg-slate-50"
                 : "border-slate-300 bg-white focus-within:border-indigo-400 focus-within:shadow-[0_0_0_3px_rgb(99_102_241_/_0.1)]"
@@ -251,7 +251,7 @@ const ChatPanel = forwardRef<ChatPanelHandle, ChatPanelProps>(
               }
               disabled={isDisabled}
               rows={1}
-              className="flex-1 resize-none bg-transparent px-4 py-3 text-sm text-slate-800 placeholder-slate-400 outline-none disabled:cursor-not-allowed"
+              className="flex-1 resize-none bg-transparent px-2 py-2 text-sm text-slate-800 placeholder-slate-400 outline-none disabled:cursor-not-allowed"
               style={{ maxHeight: "120px", overflowY: "auto" }}
               aria-label="Question input"
               aria-disabled={isDisabled}
@@ -260,14 +260,14 @@ const ChatPanel = forwardRef<ChatPanelHandle, ChatPanelProps>(
               id="send-btn"
               onClick={() => sendMessage(input)}
               disabled={isDisabled || !input.trim()}
-              className="btn-primary mr-2 mb-2 px-4 py-2 text-xs"
+              className="btn-primary h-9 px-3 sm:px-4 text-xs flex-shrink-0"
               aria-label="Send question"
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="22" y1="2" x2="11" y2="13" />
                 <polygon points="22 2 15 22 11 13 2 9 22 2" />
               </svg>
-              Send
+              <span className="hidden sm:inline">Send</span>
             </button>
           </div>
           <p className="text-xs text-slate-400 mt-2 text-center">

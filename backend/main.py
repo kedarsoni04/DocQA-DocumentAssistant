@@ -9,6 +9,7 @@ Routes:
 """
 
 import logging
+import os
 import uuid
 from pathlib import Path
 
@@ -31,10 +32,12 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI(title="DocQA", version="0.1.0")
 
-# Allow the Next.js dev server (port 3000) to call the API
+# Allow the frontend to call the API
+frontend_url = os.environ.get("FRONTEND_URL", "http://localhost:3000")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_origins=[frontend_url, "http://localhost:3000", "http://127.0.0.1:3000"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
