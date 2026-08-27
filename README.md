@@ -10,6 +10,25 @@ Upload a legal or medical PDF and ask questions about it. Every answer is ground
 
 ---
 
+## 📸 Preview
+
+![DocQA Interface](assets/screenshot.png)
+
+---
+
+## 🔗 Quick Links
+
+| Service | Link / URL | Description |
+|---|---|---|
+| **Live Frontend App** | [https://doc-qa-document-assistant.vercel.app/](https://doc-qa-document-assistant.vercel.app/) | Next.js 16 interactive UI on Vercel |
+| **Live Backend API** | [https://docqa-documentassistant.onrender.com](https://docqa-documentassistant.onrender.com) | FastAPI server hosted on Render |
+| **Interactive API Docs** | [https://docqa-documentassistant.onrender.com/docs](https://docqa-documentassistant.onrender.com/docs) | Swagger UI API explorer |
+| **API Specifications** | [https://docqa-documentassistant.onrender.com/redoc](https://docqa-documentassistant.onrender.com/redoc) | ReDoc API docs |
+| **Health Check** | [https://docqa-documentassistant.onrender.com/health](https://docqa-documentassistant.onrender.com/health) | Backend health status endpoint |
+| **GitHub Repository** | [kedarsoni04/DocQA-DocumentAssistant](https://github.com/kedarsoni04/DocQA-DocumentAssistant) | Source code repository |
+
+---
+
 ## Architecture
 
 ```
@@ -44,8 +63,8 @@ Frontend → Render answer with [p.N] citation badges
 ### 1. Clone
 
 ```bash
-git clone https://github.com/<your-org>/rag-document-qasystem.git
-cd rag-document-qasystem
+git clone https://github.com/kedarsoni04/DocQA-DocumentAssistant.git
+cd DocQA-DocumentAssistant
 ```
 
 ### 2. Backend

@@ -2,6 +2,17 @@
 
 A Retrieval-Augmented Generation (RAG) system for querying legal and medical PDFs safely — every answer is grounded in cited source text, with clickable citations that jump straight to the page they came from. Built to avoid hallucination, not just reduce it: if the answer isn't in the document, the system says so instead of guessing.
 
+## 📸 Preview
+
+![DocQA Interface](../assets/screenshot.png)
+
+## 🔗 Quick Links
+
+- **Live Frontend App**: [https://doc-qa-document-assistant.vercel.app/](https://doc-qa-document-assistant.vercel.app/)
+- **Live Backend API**: [https://docqa-documentassistant.onrender.com](https://docqa-documentassistant.onrender.com)
+- **Interactive API Docs (Swagger UI)**: [https://docqa-documentassistant.onrender.com/docs](https://docqa-documentassistant.onrender.com/docs)
+- **GitHub Repository**: [kedarsoni04/DocQA-DocumentAssistant](https://github.com/kedarsoni04/DocQA-DocumentAssistant)
+
 ## Why this exists
 
 Legal and medical documents are exactly where a confidently wrong AI answer does real damage. DocQA is built around one rule: **no claim without a citation, and no citation without a matching chunk of real source text.**
